@@ -23,6 +23,9 @@ namespace ByteBank
             roberta.Cpf = "454.658.148-3";
             roberta.Salario = 5000;
 
+            Console.WriteLine("Salário do "+ carlos.Nome + " (Funcionario): " + carlos.Salario);
+            Console.WriteLine("Salário da "+ roberta.Nome + " (Diretora): " + roberta.Salario);
+
             gerenciador.Registrar(carlos);
             gerenciador.Registrar(roberta);
 
@@ -31,9 +34,7 @@ namespace ByteBank
             
             Console.WriteLine(roberta.Nome);
             Console.WriteLine(roberta.GetBonificacao());
-
-            Console.WriteLine("Salário do Carlos (Funcionario): " + carlos.Salario);
-            Console.WriteLine("Salário da Roberta (Diretora): " + roberta.Salario);
+            
             Console.WriteLine("Total de bonificações: " + gerenciador.GetTotalBonificacao());
             Console.ReadLine();
 

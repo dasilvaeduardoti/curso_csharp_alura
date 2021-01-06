@@ -11,7 +11,7 @@ namespace ByteBank.Funcionarios
         //Declarando o método como override para sobrescrever o método herdado do Funcionario
         public override double GetBonificacao()
         {
-            return Salario;
+            return Salario + base.GetBonificacao();
         }
     }
 }
