@@ -8,7 +8,8 @@ namespace ByteBank.Funcionarios
 {
     public class Diretor : Funcionario
     {
-        public double GetBonificacao()
+        //Declarando o método como override para sobrescrever o método herdado do Funcionario
+        public override double GetBonificacao()
         {
             return Salario;
         }

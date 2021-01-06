@@ -12,7 +12,8 @@ namespace ByteBank.Funcionarios
         public string Nome { get; set; }
         public double Salario { get; set; }
 
-        public double GetBonificacao()
+        //Declarando a classe como virtual, é possível sobrescrever em outro método que sera herdado
+        public virtual double GetBonificacao()
         {
             return Salario * 0.10;
         }
