@@ -26,6 +26,14 @@ namespace ByteBank
             gerenciador.Registrar(carlos);
             gerenciador.Registrar(roberta);
 
+            Console.WriteLine(carlos.Nome);
+            Console.WriteLine(carlos.GetBonificacao());
+            
+            Console.WriteLine(roberta.Nome);
+            Console.WriteLine(roberta.GetBonificacao());
+
+            Console.WriteLine("Salário do Carlos (Funcionario): " + carlos.Salario);
+            Console.WriteLine("Salário da Roberta (Diretora): " + roberta.Salario);
             Console.WriteLine("Total de bonificações: " + gerenciador.GetTotalBonificacao());
             Console.ReadLine();
 
