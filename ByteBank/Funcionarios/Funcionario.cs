@@ -8,9 +8,17 @@ namespace ByteBank.Funcionarios
 {
     public class Funcionario
     {
-        public string Cpf { get; set; }
+        public static int TotalFuncionaros { get; private set; }
+        public string Cpf { get; private set; }
         public string Nome { get; set; }
         public double Salario { get; set; }
+
+        public Funcionario(string cpf)
+        {
+            Cpf = cpf;
+
+            TotalFuncionaros++;
+        }
 
         //Declarando a classe como virtual, é possível sobrescrever em outro método que sera herdado
         public virtual double GetBonificacao()
